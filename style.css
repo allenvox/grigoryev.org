@@ -1,8 +1,37 @@
 .wrapper {
-    width: 600px;
-    margin: 50 auto;
-    font-family: Arial;
-    line-height: 1.3;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 28px 28px;
+
+    background: #ffffff;
+    border: 1px solid rgba(17, 24, 39, 0.12);
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(17, 24, 39, 0.06);
+
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #111827;
+}
+
+body {
+    margin: 0;
+    padding: 40px 16px;
+    background: #f5f6f8;
+    color: #111827;
+}
+
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    padding-left: 18px;
 }
 
 li:not(:last-child) {
@@ -15,17 +44,13 @@ img {
 }
 
 h6 {
-    color: grey;
-}
-
-* {
-    color: #ffffff
+    color: #6b7280;
 }
 
 img#headshot {
     border-radius: 50%;
-    border: 5px solid white;
-    box-shadow: 0 0 18px darkgrey;
+    border: 5px solid #ffffff;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.18);
     width: 110px;
     height: 110px;
     float: right;
