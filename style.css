@@ -56,3 +56,32 @@ img#headshot {
     float: right;
     margin: 2.40em 2.20em;
 }
+
+img.company-logo {
+    display: inline-block;
+    vertical-align: middle;
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    margin-left: 10px;
+    margin-right: 8px;
+}
+
+img.company-logo-float {
+    float: right;
+    height: 64px;
+    width: auto;
+    max-width: 170px;
+    object-fit: contain;
+    margin: 0.1em 0 0.8em 1.2em;
+}
+
+img.company-logo-float-clear {
+    clear: right;
+}
+
+hr.experience-divider {
+    border: 0;
+    border-top: 1px solid #e5e7eb;
+    margin: 18px 0;
+}
