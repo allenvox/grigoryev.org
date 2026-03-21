@@ -1,7 +1,19 @@
+/* Without border-box, width:100% + horizontal padding overflows the viewport on narrow screens. */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: clip;
+}
+
 .wrapper {
     width: 100%;
     max-width: 600px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     padding: 28px 28px;
 
     background: #ffffff;
