@@ -14,7 +14,7 @@ html {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-    padding: 28px 28px;
+    padding: 28px 20px;
 
     background: #ffffff;
     border: 1px solid rgba(17, 24, 39, 0.12);
@@ -24,6 +24,35 @@ html {
     font-family: Arial, sans-serif;
     line-height: 1.5;
     color: #111827;
+}
+
+@media (min-width: 480px) {
+    .wrapper {
+        padding: 28px 28px;
+    }
+}
+
+/* Top nav: one row on narrow screens (no &emsp; overflow). */
+nav.site-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: clamp(4px, 1.8vw, 14px);
+    font-size: clamp(0.75rem, 3.1vw, 1rem);
+    line-height: 1.25;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+
+nav.site-nav::-webkit-scrollbar {
+    display: none;
+}
+
+nav.site-nav a {
+    flex: 0 0 auto;
+    white-space: nowrap;
 }
 
 body {
